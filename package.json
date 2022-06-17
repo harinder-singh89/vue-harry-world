@@ -1,13 +1,24 @@
 {
-  "name": "vue-hello-world-simple",
+  "name": "vue-harry-world",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main" : ".dist/vue-harry-world.common.js",
+  "author": {
+    "name": "Harinder Singh"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "build-library" : "vue-cli-service build --target lib --name vue-harry-world ./src/install.js",
     "lint": "vue-cli-service lint"
   },
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
   "dependencies": {
     "core-js": "^3.8.3",
     "vue": "^2.6.14"
